@@ -2,45 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>06 · Flex page scaffold</title>
+    <link rel="stylesheet" href="./styles/join.css">
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 
 <body>
     <header>
-        Join the Society — page copy for join.html.
-
-        Join The CSE Cheese Society
-
-        Membership is free, meetings are monthly, and the cheese is real.
-        Fill out the form and the Keeper of the Cave will be in touch.
+        <h1>Join The CSE Cheese Society</h1>
     </header>
+    <nav>
+        <p>Site navigation:</p>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="guide/index.html">Guide</a></li>
+            <ul>
+                <li><a href="guide/blue.html">Blue</a></li>
+                <li><a href="guide/fresh.html">Fresh</a></li>
+            </ul>
+        </ul>
+    </nav>
     <main>
-        Form fields:
-        - Name (text, required)
-        - Email (email, required)
-        - Which family calls to you? (select: Fresh, Soft-ripened, Blue,
-        Hard, Undecided — that's why I'm here)
-        - Which of these have you tasted? (checkboxes: Brie, Roquefort,
-        Aged Gouda — yes, the same three from the Guide)
-        - Tell us your favorite cheese (text, placeholder "e.g. Comte")
-        - Submit button: "Sign me up"
-
-        "Why join?" dialog copy (opens from a button near the form):
-
-        Why join?
-
-        - Monthly tastings. The Society buys the cheese. You bring opinions.
-        - Voting rights in the Cheese of the Month election.
-        - Access to THE CAVE (a mini-fridge, but a very serious one).
-        - A laminated membership card featuring the cheese of your choice.
-        - Amnesty program for recovering blue-cheese skeptics.
-
-        Close button: "I'm convinced"
+        <p>
+            Membership is free, meetings are monthly, and the cheese is real.
+            Fill out the form and the Keeper of the Cave will be in touch.
+        </p>
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" name="name" required>
+            <label for="email">Email: </label>
+            <input type="text" name="email" required>
+            <fieldset>
+                <legend>Which family calls to you?</legend>
+                <input type="radio" name="fresh" id="fresh">
+                <label for="fresh">Fresh</label>
+                <input type="radio" name="soft-ripened" id="soft-ripened">
+                <label for="soft-ripened">Soft-ripened</label>
+                <input type="radio" name="blue" id="blue">
+                <label for="blue">Blue</label>
+                <input type="radio" name="hard" id="hard">
+                <label for="hard">Hard</label>
+                <input type="radio" name="undecided" id="undecided">
+                <label for="undecided">Undecided</label>
+            </fieldset>
+            <fieldset>
+                <legend>Which of these have you tasted?</legend>
+                <input type="checkbox" name="brie" id="brie">
+                <label for="brie">Brie</label>
+                <input type="checkbox" name="roquefort" id="roquefort">
+                <label for="roquefort">Roquefort</label>
+                <input type="checkbox" name="aged-gouda" id="aged-gouda">
+                <label for="aged-gouda">Aged Gouda</label>
+            </fieldset>
+            <label for="favorite">Tell us your favorite: </label>
+            <input type="text" id="favorite" name="favorite" placeholder="e.g. Comte">
+            <button type="submit">Sign me up</button>
+        </form>
+        <button command="show-modal" commandfor="why-join">Why join?</button>
+        <dialog id="why-join">
+            <h2>Why join?</h2>
+            <ul>
+                <li>Monthly tastings. The Society buys the cheese. You bring opinions.</li>
+                <li>Voting rights in the Cheese of the Month election.</li>
+                <li>Access to THE CAVE (a mini-fridge, but a very serious one).</li>
+                <li>A laminated membership card featuring the cheese of your choice.</li>
+                <li>Amnesty program for recovering blue-cheese skeptics.</li>
+                <button commandfor="why-join" command="close">Close</button>
+            </ul>
+        </dialog>
     </main>
+
     <footer>
-        <p>Copyright 2026 <a href="#" id="cheese-society">The CSE Cheese Society</a>. Cheese responsibly.</p>
+        <p>Footer — pushed to the bottom by the growing main, not by positioning.</p>
     </footer>
 </body>
 

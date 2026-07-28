@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About the Cheese Society</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About the Society</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="global.css">
 </head>
 
 <body>
@@ -12,9 +14,22 @@
         <h1>About The CSE Cheese Society</h1>
     </header>
     <nav>
-
+        <p>Site navigation:</p>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="guide/index.html">Guide</a></li>
+            <ul>
+                <li><a href="guide/blue.html">Blue</a></li>
+                <li><a href="guide/fresh.html">Fresh</a></li>
+            </ul>
+        </ul>
     </nav>
     <main>
+        <figure>
+            <figcaption>This figure has <code>float: left</code> and a fixed width.</figcaption>
+        </figure>
         <p>
             The CSE Cheese Society was founded in 2024, when a seminar ended
             early and a cheese plate did not. What began as an argument over the
@@ -37,26 +52,40 @@
             Meet the Board
         </h2>
         <details>
-            Casey Rennet — Founding Chair
-            Casey once drove four hours for a cheese that turned out to be sold
-            out, and describes the trip as "still worth it." Responsible for the
-            napkin constitution. Favorite family: hard. Favorite cheese: a
-            five-year Gouda "that changed my life."
+            <summary>
+                Casey Rennet — Founding Chair
+            </summary>
+            <p>
+                Casey once drove four hours for a cheese that turned out to be sold
+                out, and describes the trip as "still worth it." Responsible for the
+                napkin constitution. Favorite family: hard. Favorite cheese: a
+                five-year Gouda "that changed my life."
+            </p>
         </details>
         <details>
-            Bri Larsson — Keeper of the Cave
-            Bri manages the Society's aging fridge (a mini-fridge, lovingly
-            mislabeled "THE CAVE") and its strict humidity log. Favorite family:
-            soft-ripened. Position on rinds: eat them, always, no exceptions.
+            <summary>
+                Bri Larsson — Keeper of the Cave
+            </summary>
+            <p>
+                Bri manages the Society's aging fridge (a mini-fridge, lovingly
+                mislabeled "THE CAVE") and its strict humidity log. Favorite family:
+                soft-ripened. Position on rinds: eat them, always, no exceptions.
+            </p>
         </details>
         <details>
-            Sam Roquefort-Nguyen — Minister of Blue
-            Sam claims no relation to the village of Roquefort-sur-Soulzon but
-            has never provided documentation either way. Runs the annual "Blue
-            Cheese Amnesty" where skeptics get one supervised second chance.
-            Favorite cheese: Stilton, at midnight, with port.
+            <summary>
+                Sam Roquefort-Nguyen — Minister of Blue
+            </summary>
+            <p>
+                Sam claims no relation to the village of Roquefort-sur-Soulzon but
+                has never provided documentation either way. Runs the annual "Blue
+                Cheese Amnesty" where skeptics get one supervised second chance.
+                Favorite cheese: Stilton, at midnight, with port.
+            </p>
         </details>
-        <h2>Meetings</h2>
+        <h3>
+            Meetings
+        </h3>
         <p>
             First Friday of every month, CSE Building, room 1337. Bring nothing
             but curiosity. The Society provides the cheese; the cheese provides

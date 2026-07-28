@@ -2,36 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The UCSD Cheese Society</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The CSE Cheese Society</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 
 <body>
     <header>
         <h1>Welcome to The CSE Cheese Society</h1>
     </header>
+
     <nav>
-
+        <p>Site navigation:</p>
+        <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="guide/index.html">Guide</a></li>
+            <ul>
+                <li><a href="guide/blue.html">Blue</a></li>
+                <li><a href="guide/fresh.html">Fresh</a></li>
+            </ul>
+        </ul>
     </nav>
+
     <main>
-        <p>We are a community of students, staff, and cheese enthusiasts who gather to taste, learn about, and discuss
-            cheeses from around the world. Whether you are an experienced cheese connoisseur or simply cheese-curious,
-            you are welcome here.</p>
-
-        <p>Explore our cheese guide, learn more about the Society, or join us at an upcoming tasting.</p>
-
-        <h2>Cheese of the Month</h2>
-
-        <p><em>This month, we are celebrating blue cheese—bold, distinctive, and full of character.</em></p>
-    </main>
-    <aside>
-        <h2>Cheese Fact</h2>
-
         <p>
-            <em>Cheese is one of the world's oldest prepared foods, with evidence of cheesemaking dating back thousands
-                of
-                years.</em>
+            We are a community of students, staff, and cheese enthusiasts who gather to taste,
+            learn about, and discuss cheeses from around the world.
+            Whether you are an experienced cheese connoisseur or simply cheese-curious,
+            you are welcome here.
+        </p>
+        <p>
+            Explore our cheese guide, learn more about the Society, or join us at an upcoming tasting.
+        </p>
+        <button id="toggle" commandfor="popover" command="toggle-popover">
+            <h2>Cheese Fact</h2>
+        </button>
+        <div popover id="popover">
+            <button commandfor="popover" command="hide-popover">
+                <p>Cheese is one of the world's oldest prepared foods,
+                    with evidence of cheesemaking dating back thousands of years.</p>
+            </button>
+        </div>
+    </main>
+
+    <aside>
+        <h2>Cheese of the Month</h2>
+        <p>
+            This month, we are celebrating blue cheese—bold, distinctive, and full of character.
         </p>
     </aside>
     <footer>
