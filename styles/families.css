@@ -14,9 +14,82 @@ body {
         background: var(--panel);
     }
 
+    nav {
+        padding: .25rem .5rem 2.5rem;
+        justify-content: left;
+
+        p {
+            padding: .5em .5em .5em;
+        }
+
+        ul {
+            list-style-type: none;
+            text-decoration: none;
+            padding: .5rem .25rem;
+
+            li {
+                float: left;
+                padding: 1em;
+            }
+        }
+    }
+
     >main {
         grid-area: main;
         padding: var(--space-3);
+    }
+
+    #hero-fresh {
+        background-image: url("../images/cheese-fresh.svg");
+        background: linear-gradient(rgba(240, 236, 235, .5), rgba(240, 236, 235, .5)), url("../images/cheese-fresh.svg");
+        view-transition-name: hero-morph;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #hero-soft {
+        background-image: url("../images/cheese-soft.svg");
+        background: linear-gradient(rgba(249, 235, 198, 0.5), rgba(249, 235, 198, 0.5)), url("../images/cheese-soft.svg");
+        view-transition-name: hero-morph;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #hero-blue {
+        background-image: url("../images/cheese-blue.svg");
+        background: linear-gradient(rgba(118, 139, 177, 0.5), rgba(118, 139, 177, 0.5)), url("../images/cheese-blue.svg");
+        view-transition-name: hero-morph;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    #hero-hard {
+        background-image: url("../images/cheese-hard.svg");
+        background: linear-gradient(rgba(255, 215, 102, 0.5), rgba(255, 215, 102, 0.5)), url("../images/cheese-hard.svg");
+        view-transition-name: hero-morph;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
+
+    ::view-transition-old(hero-morph) {
+        animation: 0.25s linear both shrink-x;
+    }
+
+    ::view-transition-new(hero-morph) {
+        animation: 0.25s linear both grow-x;
     }
 
     >footer {

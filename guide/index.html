@@ -7,6 +7,7 @@
     <meta name="description" content="A guide to cheeses commonly found around the world.">
     <title>A Short Guide to Cheese</title>
     <link rel="stylesheet" href="../styles/guide.css">
+    <link rel="stylesheet" href="styles/tokens.css">
     <link rel="stylesheet" href="../styles/global.css">
 </head>
 
@@ -27,14 +28,10 @@
     <nav>
         <p>Site navigation:</p>
         <ul>
-            <li><a href="../index.html">Index</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../join.html">Join</a></li>
             <li><a href="index.html">Guide</a></li>
-            <ul>
-                <li><a href="blue.html">Blue</a></li>
-                <li><a href="fresh.html">Fresh</a></li>
-            </ul>
         </ul>
     </nav>
     <main>
@@ -58,8 +55,10 @@
                 <dt class="cheese-families">Fresh</dt>
                 <dd class="cheese-description">
                     <figure>
-                        <img id="fresh-cheese" src="../images/cheese-fresh.svg"
-                            alt="A scalable vector graphic image representing a picture of fresh cheese.">
+                        <a href="fresh.html">
+                            <img class="cheese-pics" id="fresh-cheese" src="../images/cheese-fresh.svg"
+                                alt="A scalable vector graphic image representing a picture of fresh cheese.">
+                        </a>
                         <figcaption>
                             Fresh cheeses are young and mild. They include mozzarella, ricotta,
                             and chevre. Eat these within days.
@@ -69,8 +68,10 @@
                 <dt class="cheese-families">Soft-ripened</dt>
                 <dd class="cheese-description">
                     <figure>
-                        <img id="soft-cheese" src="../images/cheese-soft.svg"
-                            alt="A scalable vector graphic image representing a picture of soft-ripened cheese.">
+                        <a href="soft.html">
+                            <img class="cheese-pics" id="soft-cheese" src="../images/cheese-soft.svg"
+                                alt="A scalable vector graphic image representing a picture of soft-ripened cheese.">
+                        </a>
                         <figcaption>
                             Soft-ripened cheeses grow a white bloomy rind. Brie and Camembert are
                             the classic examples. The rind is edible and you should eat it.
@@ -80,8 +81,10 @@
                 <dt class="cheese-families">Blue</dt>
                 <dd class="cheese-description">
                     <figure>
-                        <img id="blue-cheese" src="../images/cheese-blue.svg"
-                            alt="A scalable vector graphic image representing a picture of blue cheese.">
+                        <a href="blue.html">
+                            <img class="cheese-pics" id="blue-cheese" src="../images/cheese-blue.svg"
+                                alt="A scalable vector graphic image representing a picture of blue cheese.">
+                        </a>
                         <figcaption>
                             Blue cheeses are veined with Penicillium roqueforti. Roquefort,
                             Gorgonzola, and Stilton lead this family. They are salty, sharp, and
@@ -92,8 +95,10 @@
                 <dt class="cheese-families">Hard</dt>
                 <dd class="cheese-description">
                     <figure>
-                        <img id="hard-cheese" src="../images/cheese-hard.svg"
-                            alt="A scalable vector graphic image representing a picture of hard cheese.">
+                        <a href="hard.html">
+                            <img class="cheese-pics" id="hard-cheese" src="../images/cheese-hard.svg"
+                                alt="A scalable vector graphic image representing a picture of hard cheese.">
+                        </a>
                         <figcaption>
                             Hard cheeses are aged for months or years. Parmigiano-Reggiano,
                             aged Gouda, and Comte reward the wait with crystals of crunch and

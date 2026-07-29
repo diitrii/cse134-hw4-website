@@ -2,6 +2,26 @@ body {
     padding: var(--space-3);
 }
 
+nav {
+    padding: .25rem .5rem 2.5rem;
+    justify-content: left;
+
+    p {
+        padding: 1em 1em .1em 1em;
+    }
+
+    ul {
+        list-style-type: none;
+        text-decoration: none;
+        padding: .1em .25rem;
+
+        li {
+            float: left;
+            padding: .1em 1em;
+        }
+    }
+}
+
 section {
     p {
         padding: var(--space-2);
@@ -22,4 +42,18 @@ article {
     padding: var(--space-2) var(--space-3);
     border-inline-start: var(--rule);
     background: var(--panel);
+}
+
+.cheese-pics {
+    width: 10em;
+    height: auto;
+    view-transition-name: hero-morph;
+}
+
+::view-transition-old(hero-morph) {
+    animation: 0.25s linear both shrink-x;
+}
+
+::view-transition-new(hero-morph) {
+    animation: 0.25s linear both group-x;
 }
