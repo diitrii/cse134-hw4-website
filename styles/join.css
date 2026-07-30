@@ -7,6 +7,7 @@ body {
         padding: var(--space-2) var(--space-3);
         border-block-end: var(--border);
         background: var(--panel);
+        background-color: #f9b02e;
     }
 
     >main {
