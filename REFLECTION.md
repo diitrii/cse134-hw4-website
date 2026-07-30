@@ -1,1 +1,3 @@
 # CSS Reflection
+
+I repeated A LOT by hand, a lot of the CSS files were kinda just built by hand, I did not have AI generate much of this at all, but I did copy and paste some things. The things built by hand were mainly the transitions, and also the coloring for the CS files. That was a big part of it, and that's what made it super important. To generate for me, definitely a lot of the boilerplate code, as I found a lot of the templates pretty annoying to copy and paste over. In terms of a wishlist, definitely the cheese families, so I could have a generic template and then just copy/paste the text in. The only broken stuff was the site.css, because if I didn't have the right stuff from site.css, then it wouldn't work properly. 
